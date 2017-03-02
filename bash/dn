@@ -1,0 +1,11 @@
+URL=$1
+OUTPUT=$2
+
+if [ $2 ]; then
+    axel --header="Accept: */*" --user-agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:21.0) Gecko/20100101 Firefox/21.0" --alternate -n 35 ${URL} --output="${OUTPUT}"
+else
+    axel --header="Accept: */*" --user-agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:21.0) Gecko/20100101 Firefox/21.0" --alternate -n 35 ${URL}
+fi
+
+
+
