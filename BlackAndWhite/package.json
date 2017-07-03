@@ -1,0 +1,14 @@
+{
+  "name": "black-and-white",
+  "version": "1.0.0",
+  "description": "컬러 파일을 흰색과 검은 색으로 만들어 준다.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jimp": "^0.2.28"
+  }
+}
