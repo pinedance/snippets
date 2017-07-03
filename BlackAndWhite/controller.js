@@ -36,9 +36,16 @@ function makeBlackAndWhite( srcFile, rstFile, cutoff, defaultBackgroundColor ){
 				var gray = grayScaleNew( rgb.red, rgb.green, rgb.blue )
 
 				if ( gray < cutoff ){ 							// black [0, 0, 0]
+					/*
 					_newthis.bitmap.data[ idx + 0 ] = 0;
 					_newthis.bitmap.data[ idx + 1 ] = 0;
 					_newthis.bitmap.data[ idx + 2 ] = 0;
+					_newthis.bitmap.data[ idx + 3 ] = rgb.alpha;
+					*/
+					
+					_newthis.bitmap.data[ idx + 0 ] = gray;
+					_newthis.bitmap.data[ idx + 1 ] = gray;
+					_newthis.bitmap.data[ idx + 2 ] = gray;
 					_newthis.bitmap.data[ idx + 3 ] = rgb.alpha;
 				}
 	
